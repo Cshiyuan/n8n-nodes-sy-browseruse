@@ -1,5 +1,7 @@
 # n8n-nodes-sy-browseruse
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 This is an n8n community node. It lets you use AI-powered browser automation in your n8n workflows through the SYBrowserUse node.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
@@ -14,7 +16,21 @@ This is an n8n community node. It lets you use AI-powered browser automation in 
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+### Option 1: Install via n8n UI (Recommended)
+
+1. Open n8n
+2. Go to **Settings** → **Community Nodes**
+3. Click **Install**
+4. Enter: `n8n-nodes-sy-browseruse`
+5. Click install and agree to the risks
+
+### Option 2: Install via npm
+
+```bash
+npm install n8n-nodes-sy-browseruse
+```
+
+For detailed instructions, follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
 ## Features
 
@@ -59,6 +75,10 @@ Connect to a locally running Browser Use service:
 4. Optionally enter an access token if your service requires authentication
 5. Test the connection to verify
 
+⚠️ **Important**: This node requires an enhanced Browser Use backend to support webhook callbacks and extended features.
+
+**Recommended Backend**: [browser-n8n-local (sybrowseruse branch)](https://github.com/Cshiyuan/browser-n8n-local/tree/sybrowseruse)
+
 ## Webhook Callback Support
 
 ### v1.1.0+ Feature: Asynchronous Task Completion
@@ -86,9 +106,29 @@ For long-running browser tasks (>5 minutes), SYBrowserUse now supports automatic
 
 - Compatible with n8n@1.60.0 or later
 - Webhook callback feature requires n8n@1.0.0+ (for `$execution.resumeUrl` support)
+- Recommended backend: [browser-n8n-local](https://github.com/Cshiyuan/browser-n8n-local/tree/sybrowseruse)
 
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
 - [Browser Use documentation](https://docs.browser-use.com/)
 - [Webhook Callback Implementation Guide](docs/webhook-callback-guide.md)
+- [Enhanced Backend Repository](https://github.com/Cshiyuan/browser-n8n-local/tree/sybrowseruse)
+
+## Contributing
+
+Issues and Pull Requests are welcome!
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details
+
+## Author
+
+**Cshiyuan**
+- Email: 826718591@qq.com
+- GitHub: [@Cshiyuan](https://github.com/Cshiyuan)
+
+---
+
+⭐ If this project helps you, please give it a star!
