@@ -1,0 +1,50 @@
+# Source files (only publish dist/)
+nodes/
+credentials/
+*.ts
+!*.d.ts
+tsconfig.json
+
+# Development files
+.vscode/
+.idea/
+.claude/
+.github/
+*.md
+!README.md
+!LICENSE
+docs/
+AGENTS.md
+CLAUDE.md
+trace-util.js
+
+# Config files
+.prettierrc.js
+eslint.config.mjs
+.gitignore
+
+# Tests
+test/
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.tsbuildinfo
+
+# Archive directory
+.archive/

@@ -1,0 +1,66 @@
+{
+  "name": "n8n-nodes-sy-browseruse",
+  "version": "1.1.0",
+  "description": "n8n community node for AI-powered browser automation using Browser Use API",
+  "license": "MIT",
+  "homepage": "https://github.com/Cshiyuan/n8n-nodes-sy-browseruse#readme",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "n8n-nodes",
+    "browser-automation",
+    "browser-use",
+    "ai-automation",
+    "web-scraping",
+    "rpa",
+    "workflow-automation",
+    "anthropic",
+    "openai",
+    "claude",
+    "gpt"
+  ],
+  "author": {
+    "name": "Cshiyuan",
+    "email": "826718591@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cshiyuan/n8n-nodes-sy-browseruse.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "test": "echo \"Warning: No tests implemented yet\" && exit 0",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "dev:docker-path": "n8n-node dev --custom-user-folder /Users/shiyuanchen/Project/docker-n8n-data"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": false,
+    "credentials": [
+      "dist/credentials/BrowserUseCloudApi.credentials.js",
+      "dist/credentials/BrowserUseLocalBridgeApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/SYBrowserUse/SYBrowserUse.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.17.0",
+    "@types/node": "^24.10.2",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=1.0.0"
+  }
+}
